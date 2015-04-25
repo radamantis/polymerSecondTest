@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>AJAX sample</title>
+ <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+
+  <link rel="import" href="/bower_components/polymer/polymer.html">
+  <link rel="import" href="/bower_components/core-ajax/core-ajax.html">
+  
+  
+  <link rel="import" href="/bower_components/core-item/core-item.html">
+  <link rel="import" href="/bower_components/core-icons/core-icons.html">
+</head>
+<body unresolved>
+<polymer-element name="polymer-names" noscript>
+
+<template>
+<core-ajax 
+   auto 
+   url="http://www.filltext.com/"
+   params='{"rows":10, "firstName":"{firstName}", "lastName":"{lastName}"}'
+   handleAs="json"
+   response={{people}}
+></core-ajax>
+<template repeat="{{person in people}}">
+    <div class="row" >
+      <core-item icon="account-box">{{person.firstName}} {{person.lastName}}</core-item>
+    </div>
+</template>
+</template>
+</polymer-element>
+
+
+<polymer-names></polymer-names>
+

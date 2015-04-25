@@ -1,0 +1,25 @@
+{
+  "name": "polymerSecondTest",
+  "version": "0.5.0",
+  "authors": [
+    "Radamantis <radamantis.torres@gmail.com>"
+  ],
+  "description": "polymer loading external files",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5",
+    "core-ajax": "polymer/core-ajax#~0.5.5",
+    "webcomponentsjs": "~0.6.1",
+    "core-icons": "polymer/core-icons#~0.5.5",
+    "core-item": "polymer/core-item#~0.5.5",
+    "core-header-panel": "polymer/core-header-panel#~0.5.5",
+    "core-toolbar": "polymer/core-toolbar#~0.5.5"
+  }
+}
